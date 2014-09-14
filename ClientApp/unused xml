@@ -1,0 +1,21 @@
+				<Button android:id="@+id/connect" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:enabled="true" 
+						android:onClick="onButtonClicked"
+						android:text="Connect to Server">
+				</Button>
+				<Button android:id="@+id/play_song" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:enabled="true" 
+						android:onClick="onButtonClicked"
+						android:text="Play Song">
+				</Button>
+				
+						<EditText android:id="@+id/editPORT"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="PORT"
+				android:inputType="number">
+		</EditText>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/background"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="match_parent" android:background="#ffffff">
+		
+		<HorizontalScrollView 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+				<TextView android:id="@+id/tvArtist"
+						android:singleLine="true" 
+						android:scrollHorizontally="true"
+						android:ellipsize="marquee"
+						android:marqueeRepeatLimit ="marquee_forever"
+						android:textSize="28sp"
+						android:layout_width="wrap_content"
+						android:layout_height="48sp"
+						android:clickable="true"
+						android:onClick="onTextViewClicked"
+						android:hint="Artist">
+				</TextView>
+		</HorizontalScrollView>
+
+		<HorizontalScrollView 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+				<TextView android:id="@+id/tvAlbum"
+						android:singleLine="true" 
+						android:scrollHorizontally="true"
+						android:ellipsize="marquee"
+						android:marqueeRepeatLimit ="marquee_forever"
+						android:textSize="22sp"
+						android:layout_width="wrap_content"
+						android:layout_height="32sp"
+						android:clickable="true"
+						android:onClick="onTextViewClicked"
+						android:hint="Album">
+				</TextView>
+		</HorizontalScrollView>
+		
+		<TextView android:id="@+id/tvSong"
+				android:layout_width="match_parent"
+				android:layout_height="200sp" 
+				android:textSize="40sp"
+				android:hint="Song">
+		</TextView>
+
+		<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical|center_horizontal|center">
+				<TextView android:text="" 
+						android:id="@+id/textView1" 
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:textAppearance="?android:attr/textAppearanceSmall" >
+				</TextView>
+		</ScrollView>
+		
+		<LinearLayout android:id="@+id/ControlLayout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:weightSum="7">
+				android:layout_alignParentBottom="true">
+				<Button android:id="@+id/previous" 
+						android:layout_width="0dp" 
+						android:layout_height="fill_parent" 
+						android:layout_weight="2"
+						android:enabled="true" 
+						android:onClick="onButtonClicked"
+						android:text="Prev">
+				</Button>
+				<Button android:id="@+id/play_pause" 
+						android:layout_width="0dp"
+						android:layout_height="fill_parent" 
+						android:layout_weight="3"
+						android:enabled="true" 
+						android:onClick="onButtonClicked"
+						android:text="Play">
+				</Button>
+				<Button android:id="@+id/next" 
+						android:layout_width="0dp"
+						android:layout_height="fill_parent" 
+						android:layout_weight="2"
+						android:enabled="true" 
+						android:onClick="onButtonClicked"
+						android:text="Next">
+				</Button>
+		</LinearLayout>
+		
+
+		
+		<Button android:id="@+id/ViewLibrary"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:onClick="onButtonClicked"
+		    	android:text="View Library">
+		</Button>
+		<Button android:id="@+id/SyncLibrary"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:onClick="onButtonClicked"
+		    	android:text="Sync Library">
+		</Button>
+		<Button android:id="@+id/exit" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:enabled="true" 
+				android:onClick="onButtonClicked"
+				android:text="Exit Program">
+		</Button>
+    	
+
+
+
+</LinearLayout>

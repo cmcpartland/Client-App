@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/background"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="match_parent" android:background="#ffffff">
+
+		<HorizontalScrollView 
+		    	android:layout_width="match_parent"
+		    	android:layout_height="50sp"
+		    	android:background="#c9c8c8"
+		    	android:id="@+id/headerSV">
+		    	<TextView
+						android:id="@+id/header"
+						android:textColor="#000000"
+						android:background="#c9c8c8"
+						android:gravity="center_vertical"
+						android:text="Header"
+						android:textSize="28sp"
+						android:textStyle="bold"
+						android:paddingLeft="0dp"
+						android:minHeight="?android:attr/listPreferredItemHeight"
+						android:singleLine="true" 
+						android:scrollHorizontally="true"
+						android:ellipsize="marquee"
+						android:marqueeRepeatLimit ="marquee_forever"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent" >
+				</TextView>
+		</HorizontalScrollView>
+   		<ListView 
+   				android:id="@+id/listView"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_below="@+id/headerSV" > 
+    	</ListView> 
+
+</RelativeLayout>
